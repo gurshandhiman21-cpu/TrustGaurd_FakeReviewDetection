@@ -1,15 +1,25 @@
-# TrustGaurd Fake Review Detection System
+# TrustGuard Fake Review Detection System
 
 ## Overview
 This project detects fake reviews using NLP and Machine Learning.
 
-Instead of simple classification, it assigns a TrustScore (0–100) to measure authenticity.
+Instead of binary classification, it assigns a TrustScore (0–100) to measure authenticity.
+
+## Problem
+Fake reviews mislead customers and damage trust in e-commerce platforms.
+
+## Solution
+We built a system that:
+- Analyzes review text
+- Detects promotional patterns
+- Calculates a TrustScore
+- Classifies review as Fake or Genuine
 
 ## Features
 - Text preprocessing
-- Sentiment analysis
-- Promotional keyword detection
-- Machine learning model (Random Forest)
+- Sentiment analysis (TextBlob)
+- TF-IDF vectorization
+- Random Forest model
 - TrustScore scoring system
 
 ## Tech Stack
@@ -19,15 +29,17 @@ Instead of simple classification, it assigns a TrustScore (0–100) to measure a
 - Kaggle Notebook (Jupyter environment)
 
 ## How to Run
-1. Download the notebook
-2. Open in Jupyter or Kaggle
+1. Download notebook
+2. Open in Jupyter/Kaggle
 3. Upload dataset
 4. Run all cells
+5. Test using `check_review()`
 
 ## Example Output
 Review: "Amazing product must buy"
 TrustScore: 33
 Likely Fake Review
 
-## Note
-If GitHub preview shows errors, download and open in notebook environment.
+## Innovation
+- TrustScore instead of binary output
+- Explainable detection system
